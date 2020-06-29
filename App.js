@@ -15,19 +15,17 @@ const Tab = createBottomTabNavigator();
 
 const en = {
   feu: 'The fire',
-  bar: 'Bar {{someValue}}',
 };
 
 const fr = {
   feu: 'Le feu',
-  bar: 'Bár {{someValue}}',
 };
 
 i18n.fallbacks = true;
 i18n.translations = { fr, en };
 
- i18n.locale = Localization.locale;
- i18n.locale = 'fr';
+ //Change 'fr' to 'eng' to change language to english
+  i18n.locale = 'fr';
 
 
 
